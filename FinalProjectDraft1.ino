@@ -236,7 +236,7 @@ bool noteCheck(int goodNote){
 int noteReturn(int num){
   for (int i=0;i<8;i++){
   if (pitches[i]==totalNoteSequence[num]){
-    return i;
+    return (i+1);
   }
   }
 
