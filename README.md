@@ -15,8 +15,13 @@ Your score will be represented by the percentage of notes you play correctly. Yo
 # Inputs
 The board's accelerometer, ranging from -20 to 20 in each axis. Used to determine which direction the board is tilting.
 The board's buttons, having values of 0 or 1. Used to determine what note to play and activates notes to be played.
+The board's slide switch, used to toggle having sound or not.
 # Outputs
 The board's speaker used for playing notes in the range of midi pitches between 60 and 74. (Frequencies between 261.63 and 587.33 Hz)
 The board's LEDs with RGB ranges from 0 to 255, used to display colors in response to the player's performance
 Serial monitor: used to print instructions, display notes, and display a final score. Initialized at 9600 baud.
+
+# Updates
+6/12/2023- Added a mute mode: slide the switch on the board and the game mutes for when you want to play without sound. Switch it back to get sound back.
+         - Added levels: 1, 2, and 3.
 
