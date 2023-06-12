@@ -24,4 +24,5 @@ Serial monitor: used to print instructions, display notes, and display a final s
 # Updates
 6/12/2023- Added a mute mode: slide the switch on the board and the game mutes for when you want to play without sound. Switch it back to get sound back.
          - Added levels: 1, 2, and 3.
+6/12/2023- Added pseudocode
 
