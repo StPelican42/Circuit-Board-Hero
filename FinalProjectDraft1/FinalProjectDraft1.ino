@@ -40,6 +40,7 @@ void setup() {
 }
 
 void loop() {
+  switchState=CircuitPlayground.slideSwitch();// updates the switchState to update whether game is muted or not.
   level=1;// initializes level at 1, and score at 0.
   score=0;
   correctNotes=0;
