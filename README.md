@@ -9,9 +9,12 @@ A handheld game on the Adafruit Circuit Playground Express Board inspired by the
 # Controls
 Hold the board with the USB port facing away from you. Tilt the board to the left, right, away from you, or toward you based on what directions you are given. Press the left or right buttons to play different notes. Each combination of tilt and button plays a different note, with a total of 8 different possible notes to play.
 # Rules
-When starting, the Arduino IDE Serial Monitor will print instructions for the game. Press either button to start. Notes will appear from the bottom to the top of the screen, and you will have until the note disappears in the top of the Serial Monitor to play it correctly. Notes will be represented as directions (Left, Right, Up, Down) on one of two sides in the serial monitor.
-If a direction is displayed on the left side of the serial monior, the correct note will be played using the left button. Likewise, if a direction is displayed on the right side of the serial monitor, the correct note will be played using the right button. Each round uses a sequence of 10 to 20 randomly picked notes. 
+When starting, the Arduino IDE Serial Monitor will print instructions for the game. Press either button to start. Notes will appear from the bottom to the top of the screen, and you will have until the note leaves the bottom row of the Serial Monitor to play it correctly. Notes will be represented as directions (Left, Right, Up, Down) on one of two sides in the serial monitor.
+
+If a direction is displayed on the left side of the serial monior, the correct note will be played using the left button. Likewise, if a direction is displayed on the right side of the serial monitor, the correct note will be played using the right button. Each round uses a sequence of 10 to 20 randomly picked notes depending on what level you choose. Level 1 has 10 notes with 2 seconds between notes, level 2 has 10 notes with 1 second between notes, and level 3 has 20 notes with 1 second between notes.
+
 Your score will be represented by the percentage of notes you play correctly. Your percentage of correct notes played will be represented by the flashing LEDs on your board. Gold is 100% correct, Green is at least 90%, Green and yellow is at least 80%, yellow and orange is at least 70%, orange and red is at least 60%, and anything below 60% is red. At the end of a sequence, your score will be reported in the serial monitor as a percentage of correct notes played out of the sequence, and you can press either button to play again. 
+
 # Inputs
 The board's accelerometer, ranging from -20 to 20 in each axis. Used to determine which direction the board is tilting.
 The board's buttons, having values of 0 or 1. Used to determine what note to play and activates notes to be played.
